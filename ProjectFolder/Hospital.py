@@ -14,7 +14,7 @@ class Hospital:
     def add_patient(self,patient):
         self.patient.append(patient)
     #displaying the patient details
-    def display_patient(self):
+    def display_patients(self):
         st.subheader("\n--- Patients ---")
         for patient in self.patients:
             st.write(patient)
@@ -27,7 +27,7 @@ class Hospital:
         return False
     #Doctor Management
     #Adding a doctor details
-    def add_doctor(self,doctor):
+    def add_doctors(self,doctor):
         self.doctors.append(doctor)
     #displaying the doctor details
     def display_doctor(self):
