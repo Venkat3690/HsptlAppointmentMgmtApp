@@ -12,7 +12,7 @@ class Hospital:
     #Patient Management
     #Adding a patient details
     def add_patient(self,patient):
-        self.patient.append(patient)
+        self.patients.append(patient)
     #displaying the patient details
     def display_patients(self):
         st.subheader("\n--- Patients ---")
@@ -27,7 +27,7 @@ class Hospital:
         return False
     #Doctor Management
     #Adding a doctor details
-    def add_doctors(self,doctor):
+    def add_doctor(self,doctor):
         self.doctors.append(doctor)
     #displaying the doctor details
     def display_doctor(self):
@@ -50,7 +50,7 @@ class Hospital:
             return False
         appointment = ap.Appointment(patient, doctor, date, time)
         self.appointments.append(appointment)
-        st.write(f"\nAppointment scheduled:\n{appointment}")
+        st.write(f"{appointment}")
         return True
     def view_appointments(self):
         st.subheader("\n--- Appointments ---")

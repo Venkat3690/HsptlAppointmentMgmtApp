@@ -6,5 +6,5 @@ class Patient:
         self.gender=gender
         self.contact=contact
     def __str__(self):
-        return (f'ID: {self.patient_id}, Name: {self.name}, Age: {self.age}, Gender: {self.gender}, Contact: {self.contact}')
+        return (f'ID: {self.patient_id}\nName: {self.name}\nAge: {self.age}\nGender: {self.gender}\nContact: {self.contact}')
         

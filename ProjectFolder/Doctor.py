@@ -4,4 +4,4 @@ class Doctor:
         self.name=name
         self.specialization=specialization
     def __str__(self):
-        return (f'ID: {self.doctor_id}, Name: {self.name}, Specialization: {self.specialization}')
+        return (f'ID: {self.doctor_id}\nName: {self.name}\nSpecialization: {self.specialization}')

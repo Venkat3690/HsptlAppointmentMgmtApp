@@ -5,4 +5,4 @@ class Appointment:
         self.date=date
         self.time=time
     def __str__(self):
-        return (f'Appointment: {self.date} at {self.time}\nPatient: {self.patient}\nDoctor: Dr. {self.doctor}')
+        return (f'Appointment scheduled on {self.date} at {self.time} for {self.patient} assigned to {self.doctor}')

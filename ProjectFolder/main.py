@@ -12,7 +12,7 @@ hospital = st.session_state.hospital
 
 st.title("Hospital Appointment Management System")
 
-st.sidebar.header("Navigation")
+st.sidebar.header("Services")
 options = st.sidebar.radio("Select an action", [
     "Add Patient", "Add Doctor", "View Patients", "View Doctors",
     "Schedule Appointment", "View Appointments"
@@ -61,7 +61,7 @@ elif options == "View Patients":
 # View all doctors
 elif options == "View Doctors":
     st.subheader("📋 List of Doctors")
-    doctors = hospital.display_doctors()
+    doctors = hospital.display_doctor()
     if doctors:
         for d in doctors:
             st.write(f"**ID:** {d.doctor_id}, **Name:** {d.name}, **Specialization:** {d.specialization}")
